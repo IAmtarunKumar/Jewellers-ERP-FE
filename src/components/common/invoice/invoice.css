@@ -1,0 +1,308 @@
+/* Hide in UI, visible in print */
+.print-section {
+  display: none;
+}
+
+/* Visible in print */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .bold {
+    font-weight: 800;
+  }
+  .print-section,
+  .print-section * {
+    visibility: visible;
+  }
+  .print-section {
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    padding: 50px;
+  }
+  .orgName {
+    font-size: 30px;
+  }
+  .invoice-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .invoice-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+  }
+  .invoice-footer {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    color: #555 !important;
+    border: 1px solid #ddd;
+  }
+
+  .table th,
+  .table td {
+    padding: 10px 15px !important;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .table thead {
+    background-color: #2c3e50 !important;
+    color: #ffffff;
+  }
+  .table th,
+  .table td {
+    border: 1px solid #ddd !important;
+  }
+
+  /* .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .table th,
+  .table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .table thead {
+    background-color: #6fa1f6;
+    color: #ffffff;
+  }
+
+  .table tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+
+  /* For printing purpose, add additional styles within a media query */
+
+  /* .table {
+    color: #000;
+    border: 1px solid #000;
+  }
+
+  .table th,
+  .table td {
+    border: 1px solid #000;
+  }
+
+  .table thead {
+    color: #000;
+    background-color: #ccc;
+  } */
+}
+.radio-buttons {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.custom-radio input {
+  display: none;
+}
+
+.radio-btn {
+  margin: 10px;
+  width: 150px;
+  height: 100px;
+  border: 3px solid transparent;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+
+  cursor: pointer;
+}
+.box-white {
+  box-shadow: 0 0 20px #06050567;
+}
+.box-dark {
+  box-shadow: 0 0 20px #bbbbbb67;
+}
+.radio-btn > i {
+  color: #ffffff;
+  background-color: #2490ef;
+  font-size: 20px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%) scale(2);
+  border-radius: 50px;
+  padding: 3px;
+  transition: 0.5s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.radio-btn .taxes {
+  width: 130px;
+  height: 55px;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+.radio-btn .taxes i {
+  color: #2490ef;
+  line-height: 80px;
+  font-size: 60px;
+}
+
+.radio-btn .taxes h3 {
+  color: #555;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.custom-radio input:checked + .radio-btn {
+  border: 2px solid #2490ef;
+}
+
+/* This is for the check icon */
+.active-tax > i {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+/* This is for the border */
+.active-tax {
+  border: 2px solid #2490ef;
+}
+
+/* .custom-radio input:checked + .radio-btn > i {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+} */
+
+.wideColumn {
+  width: 100px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.invoice-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.customer-details {
+  width: 45%;
+  padding-right: 5%;
+}
+
+.invoice-meta {
+  width: 45%;
+  text-align: right;
+}
+/* .customer-details,
+.invoice-meta {
+  width: 45%;
+} */
+
+.customer-details h3,
+.invoice-meta h3 {
+  margin-bottom: 10px;
+}
+.totals-box {
+  display: flex;
+  justify-content: space-between; /* Align to the right */
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.totals,
+.tax-details {
+  width: 45%;
+  text-align: right; /* Right align the content */
+  padding-left: 5%; /* Add some padding to separate the two boxes */
+}
+
+.totals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.tax-and-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.tax-details {
+  width: 45%;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+.totals-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.signatory {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.signature-space {
+  width: 200px;
+  height: 50px;
+  /* border-bottom: 1px solid #000;  */
+  margin: 20px 0;
+}
+
+.footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

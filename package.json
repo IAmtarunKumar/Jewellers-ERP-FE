@@ -1,0 +1,86 @@
+{
+  "name": "crm-dashboard",
+  "version": "1.2.3",
+  "description": "Dashboard for Aestra Organisation",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "build:scss": "npm run compile:scss && npm run minify:scss && npm run map:scss"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.417.0",
+    "@aws-sdk/s3-request-presigner": "^3.417.0",
+    "@casl/ability": "^6.5.0",
+    "@casl/react": "^3.1.0",
+    "@fortawesome/fontawesome-free": "6.4.0",
+    "@hookform/resolvers": "^3.1.1",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
+    "axios": "^1.4.0",
+    "bootstrap": "4.6.2",
+    "chart.js": "2.9.4",
+    "classnames": "^2.3.2",
+    "dom-to-image": "^2.6.0",
+    "firebase": "^10.4.0",
+    "highcharts": "^11.1.0",
+    "highcharts-react-official": "^3.2.0",
+    "html-to-image": "^1.11.11",
+    "html2canvas": "^1.4.1",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.0",
+    "jwt-decode": "^3.1.2",
+    "moment": "2.29.4",
+    "nouislider": "15.4.0",
+    "react": ">=16.0.0",
+    "react-chartist": "^0.14.4",
+    "react-chartjs-2": "^2.11.2",
+    "react-copy-to-clipboard": "5.1.0",
+    "react-data-table-component": "^7.5.2",
+    "react-datepicker": "^4.20.0",
+    "react-datetime": "3.2.0",
+    "react-dom": ">=16.0.0",
+    "react-dropzone": "^14.2.3",
+    "react-hook-form": "^7.45.0",
+    "react-icons": "^4.9.0",
+    "react-router-dom": "6.11.1",
+    "react-scripts": "^5.0.1",
+    "react-select": "^5.7.3",
+    "react-to-print": "^2.14.15",
+    "react-toastify": "^10.0.6",
+    "reactstrap": "8.10.0",
+    "sass": "1.62.1",
+    "stream-http": "^3.2.0",
+    "styled-components": "^5.3.11",
+    "sweetalert2": "^11.7.16",
+    "url": "^0.11.1",
+    "util": "^0.12.5",
+    "yup": "^1.2.0",
+    "zxcvbn": "^4.4.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "optionalDependencies": {
+    "eslint-plugin-flowtype": "8.0.3",
+    "typescript": "5.0.4"
+  },
+  "overrides": {
+    "svgo": "3.0.2",
+    "fsevents": "2.3.2",
+    "chokidar": "3.5.3"
+  }
+}

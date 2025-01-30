@@ -1,0 +1,13 @@
+button:focus, :focus {
+  outline: none;
+}
+/* Add styles for focused input fields */
+.form-control:focus {
+  box-shadow: 5px 5px 5px rgba(88, 80, 200, 0.3); 
+  outline: none;
+  border: 1px solid black;
+  transition: all 0.3 ease-in;
+}
+.modal-dialog{
+  max-width: 700px;
+}

@@ -1,0 +1,113 @@
+/* Styles for the scrollbar thumb (the draggable scrolling handle) */
+.dropdown-menu-arrow::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust color as needed */
+  border-radius: 8px;
+  width: 5px;
+}
+
+/* Styles for the scrollbar track (the background of the scrollbar) */
+.dropdown-menu-arrow::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust color as needed */
+  border-radius: 8px;
+}
+
+/* Styles for the scrollbar width */
+.dropdown-menu-arrow::-webkit-scrollbar {
+  width: 5px;
+}
+
+.search-container {
+  width: 250px;
+  background-color: #e4e4e4;
+  position: relative;
+  border-radius: 10px;
+  padding: 10px;
+}
+@media (max-width: 990px) {
+  .search-container {
+    width: 200px;
+  }
+}
+.search__box {
+  float: left;
+  width: 0;
+  height: 1rem;
+  background: none;
+  color: #4a4949;
+  font-size: 14px;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  position: relative;
+  opacity: 1;
+  transition: all 0.75s ease-in;
+  cursor: pointer;
+}
+
+.search__icon {
+  box-sizing: border-box;
+  float: right;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 0;
+  cursor: pointer;
+  position: absolute;
+  color: #3f3f3f;
+  transition: all 0.25s ease-in;
+  border-radius: 50%;
+}
+
+.search-container:hover > .search__box {
+  width: 85%;
+  padding: 0 1rem;
+}
+
+.search-container:hover > .search__icon {
+  background-color: #eee;
+}
+
+.search-results {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.search-result {
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #3f3f3f;
+  margin: 3px;
+}
+
+.search-result:hover {
+  background-color: #f0f0f0;
+  color: #3f3f3f;
+}
+
+.search-results::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust color as needed */
+  border-radius: 8px;
+  width: 5px;
+}
+
+/* Styles for the scrollbar track (the background of the scrollbar) */
+.search-results::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust color as needed */
+  border-radius: 8px;
+}
+
+/* Styles for the scrollbar width */
+.search-results::-webkit-scrollbar {
+  width: 5px;
+}

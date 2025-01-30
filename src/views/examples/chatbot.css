@@ -1,0 +1,144 @@
+.chatbot {
+  bottom: 2%;
+  right: 1%;
+  z-index: 10;
+  position: fixed;
+  cursor: pointer;
+}
+.chatbot .chatbot-inner {
+  width: 420px;
+  overflow: hidden;
+}
+
+.logo-chatbot {
+  width: 75px;
+}
+
+.width-50 {
+  width: 75px;
+}
+
+.desc::-moz-placeholder {
+  margin-left: 50px;
+}
+
+.desc::placeholder {
+  margin-left: 50px;
+}
+
+@keyframes slide-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.message {
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 80%;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.bot-msg {
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
+  align-self: flex-start;
+  margin-right: auto;
+  animation: slide-in-left 0.5s ease-out forwards;
+}
+
+.user-msg {
+  background-color: #0bf62a;
+  border-radius: 10px;
+  align-self: flex-end;
+  margin-left: auto;
+  animation: slide-in-right 0.5s ease-out forwards;
+}
+
+.overflow-auto {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 transparent; /* For Firefox */
+  height: 300px;
+}
+
+.overflow-auto::-webkit-scrollbar {
+  width: 6px; /* For Chrome, Edge, and Safari */
+}
+
+.overflow-auto::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.chatbot-inner {
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.offline-message {
+  color: black;
+  margin-left: 10px;
+}
+
+.offline-message span.online::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: calc(50% - 4px);
+  background: rgb(88, 183, 67);
+  border-radius: 50%;
+  left: -15px;
+}
+
+.no-clip-path .offline-message {
+  padding: 14px 28px 20px;
+}
+
+.offline-message span {
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.close-bot {
+  color: black;
+  width: 30px;
+  height: 30px;
+}
+
+.initial-msg {
+  color: black;
+  margin-top: 10px;
+}/*# sourceMappingURL=chatbot.css.map */

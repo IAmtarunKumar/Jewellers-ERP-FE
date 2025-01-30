@@ -1,0 +1,80 @@
+export const entityConfig = {
+  customer: {
+    name: "Customer Name",
+    contact: "Contact",
+    address: "Address",
+    pincode:"Pincode"
+  },
+  product: {
+    productName: "Product Name",
+    price: "Price",
+    sku: "SKU",
+    weight: "Weight",
+    purity: "Purity",
+    material: "Material",
+    type: "Type",
+    design: "Design",
+    size: "Size",
+    gemStone: "Gem Stone",
+    currentStock: "Current Stocks",
+    description: "Description",
+  },
+  b2b: {
+    name: "Name",
+    contact: "Contact",
+    address: "Address",
+  },
+  customOrder: {
+    orderDate: "Order Date",
+    completionDate: "Completion Date",
+  },
+  hallMarkCenter: {
+    centerName: "Center Name",
+    contact: "Contact",
+    address: "Address",
+    email: "Email",
+    authorizedBy: "Authorised By",
+  },
+  jobWork: {
+    rawMaterialName: "Raw Material Name",
+    rawMaterialType: "Raw Material Type",
+    vendorName: "Vendor Name",
+    priceDecided: "Price Decided",
+    givenDate: "Given Date",
+    returnDate: "Return Date",
+    givenWeight: "Given Weight",
+    returnWeight: "Return Weight",
+    givenPurity: "Given Purity",
+    returnPurity: "Return Purity",
+    description: "Description",
+  },
+  rawMaterial: {
+    name: "Name",
+    type: "Type",
+    currentWeight: "Current Weight",
+    price: "Price",
+    lastStockDate: "Last Stock Date",
+    description: "Description",
+  },
+  repair: {
+    repairCost: "Repair cost",
+    expectedReturnDate: "Expected Return Date",
+    repairDate: "Repair Date",
+    repairId: "Repair Id",
+    productId: "Product Id",
+    customerId: "Customer Id",
+    issueDescription: "Issue Description",
+  },
+  supplier: {
+    name: "Supplier Name",
+    contact: "Contact",
+    address: "Address",
+    pincode:"Pincode"
+  },
+  vendor: {
+    name: "Vendor Name",
+    contact: "Contact",
+    address: "Address",
+    pincode:"Pincode"
+  },
+};

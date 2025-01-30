@@ -1,0 +1,17 @@
+.btn{
+  .btn-inner--icon{
+    margin-right: 4px;
+  }
+}
+.btn + .btn {
+  margin-left: 4px;
+}
+
+.add-btn{
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 35px;
+}
